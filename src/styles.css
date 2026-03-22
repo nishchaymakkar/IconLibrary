@@ -1,0 +1,23 @@
+:root{ --bg:#0f1720; --card:#0b1220; --muted:#51555b; --accent:#60a5fa }
+*{box-sizing:border-box;font-family:Lucida,ui-sans-serif,system-ui,Luida Sans,Roboto,"Helvetica Neue",Arial}
+body{height:100%;margin:0; overflow: hidden;background:#f6f7fb;color:#0b1220}
+.app{display:flex;height:100%}
+.sidebar{width:220px;overflow-y:auto;flexshrink:0;border-right:1px solid #e6e9ef;padding:16px;background:#fff}
+.sidebar h2{margin:0 0 8px;font-size:14px}
+.sidebar ul{list-style:none;padding:0;margin:0}
+.sidebar li{padding:8px 10px;border-radius:6px;cursor:pointer;display:flex;justify-content:space-between;align-items:center}
+.sidebar li:hover{background:#d6e6ff}
+.sidebar li.active{background:#97c0fe}
+.sidebar .count{color:var(--muted);font-size:12px}
+.main{flex:1;padding:16px;padding-bottom:16px;overflow:auto}
+.main header{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+.controls{display:flex;gap:8px;align-items:center}
+.controls input{padding:8px;border:1px solid #e6e9ef;border-radius:8px;width:220px}
+.controls select{padding:8px;border:1px solid #e6e9ef;border-radius:8px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:12px;}
+.icon-card{background:#fff;border:1px solid #e6e9ef;padding:12px;border-radius:8px;display:flex;flex-direction:column;align-items:center;gap:8px;cursor:pointer;position:relative}
+.icon-card img{width:48px;height: 64px;}
+.icon-card .label{font-size:12px;color:#333;text-align:center;word-break:break-all}
+.copied{position:absolute;right:8px;top:8px;background:var(--accent);color:#fff;padding:2px 6px;border-radius:4px;font-size:11px}
+
+/* usage button removed; click the card to copy React usage snippet */
